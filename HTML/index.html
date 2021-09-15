@@ -1,0 +1,37 @@
+<html>
+    
+    <head>
+        <title>Inicio</title>
+    </head>
+
+    <body>
+        <div align="center">
+            <button style="margin: 10px; width:220px; height:45px" onclick="location='index.html'">Inicio</button>
+            <button style="margin: 10px; width:220px; height:45px" onclick="location='acercade.html'">Acerca de</button>
+            <button style="margin: 10px; width:220px; height:45px" onclick="location='contacto.html'">Contacto</button>
+        </div>
+        <br><br>
+
+        <div align="center">
+            <p style="color:black; font-weight:bold; padding:10px; border:1px solid black;">¡Busca la definición de una palabra!</p>
+        </div>
+        <br>
+
+        <div align="center">
+                <label style="width:30%"> Word:  </label>
+                <input style="width:50%" type="text" id="word">
+            <br>
+            <button style="margin: 10px; width:100px; height:30px"  onclick="getOxfordApi()">Buscar</button>
+            <br>
+        </div>
+
+        <div id="result"> 
+            <br>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../JavaScript/index.js"></script>
+
+    </body>
+
+</html>
